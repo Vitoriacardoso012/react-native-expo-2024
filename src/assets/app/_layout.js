@@ -4,7 +4,6 @@ import { AppProvider } from "../../hooks";
 export default function Layout() {
     return (
      <AppProvider>
-        {" "}
          <Stack /> 
          </AppProvider> 
     );
