@@ -1,10 +1,15 @@
-import { Children } from "react";
-import { FontProvider } from "./Font";
 import { AuthProvider } from "./Auth";
+import { DataProvider } from "./Data";
+import { FontProvider } from "./Font";
 
-export function AppProvider({ children }) {
-    return 
+export function AppProvider({children}){
+    return ( 
     <FontProvider>
-        <AuthProvider>{children}</AuthProvider>
-    </FontProvider>;
+        <DataProvider>
+            <AuthProvider>
+                {children}
+            </AuthProvider>
+        </DataProvider>
+    </FontProvider>
+    )
 }
