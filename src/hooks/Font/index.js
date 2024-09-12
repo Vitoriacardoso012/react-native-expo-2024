@@ -7,11 +7,10 @@ const FontContext = createContext({});
 
 export function FontProvider({ children }) {
     const [fontsLoaded, error] = useFonts({
-        regular: require("../../assets/fonts/Montserrat-Regular.ttf"),
-        bold: require("../../assets/fonts/Montserrat-Bold.ttf"),
-        black: require("../../assets/fonts/Montserrat-Black.ttf"),
-        semibold: require("../../assets/fonts/Montserrat-SemiBold.ttf"),
-        light: require("../../assets/fonts/Montserrat-Light.ttf"),
+        regular: require("../../assets/fontes/Montserrat-Regular.ttf"),
+        bold: require("../../assets/fontes/Montserrat-Bold.ttf"),
+        semibold: require("../../assets/fontes/Montserrat-SemiBold.ttf"),
+        light: require("../../assets/fontes/Montserrat-Light.ttf"),
     });
 
     if (!fontsLoaded && !error) {
