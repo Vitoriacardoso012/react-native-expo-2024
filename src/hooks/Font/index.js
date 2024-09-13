@@ -8,7 +8,7 @@ export function FontProvider({children}){
     const [loaded, error] = useFonts({
         regular: require("../../assets/fonts/Montserrat-Regular.ttf"),
         bold: require("../../assets/fonts/Montserrat-Bold.ttf"),
-        black: require("../../assets/fonts/Montserrat-Black.ttf"),
+        black: require("../../assets/fonts/Montserrat-BlackItalic.ttf"),
         semibold: require("../../assets/fonts/Montserrat-SemiBold.ttf"),
         light: require("../../assets/fonts/Montserrat-Light.ttf"),
     });

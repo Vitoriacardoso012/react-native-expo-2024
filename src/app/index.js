@@ -22,18 +22,6 @@ export default function App() {
       title='Signin Super'
       onPress={handleEntrarSuper}
       />
-       <Button 
-      title='Signin Adm'
-      onPress={() =>
-      signIn({email: "adm@email.com" , password: "Adm123!"})
-      }
-      />
-       <Button 
-      title='Signin User'
-      onPress={() =>
-      signIn({email: "user@email.com" , password: "User123!"})
-      }
-      />
       <Button title='Sobre' onPress={() => router.push("about")} />
         <Button
          title='Sair do Aplicativo'

@@ -1,4 +1,4 @@
-import {Text, View} from "react-native";
+import {Text, View, Button} from "react-native";
 import { useAuth } from "../../hooks/Auth";
 
 export default function Home() {
